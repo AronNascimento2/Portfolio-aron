@@ -242,3 +242,142 @@ h1 {
     border-bottom: 1px solid #444;
   }
 }
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+input {
+  border-radius: 10px;
+  padding: 0.5rem;
+  outline: 0;
+  border: 0;
+  color: #27222299;
+}
+textarea {
+  border-radius: 10px;
+  padding: 0.5rem;
+  resize: none;
+  color: #27222299;
+}
+.inputs {
+  animation: slideIn 1.5s ease-in-out forwards;
+  display: flex;
+  gap: 5px;
+}
+.cont {
+  animation: fadeIn 5s;
+  height: 700px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.infos {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  bottom: 110px;
+}
+.inputs {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+h1 {
+  text-decoration: underline white;
+}
+@media (max-width: 800px) {
+  .cont {
+    animation: fadeIn 5s;
+    gap: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .infos {
+    margin-top: 1rem;
+    > h1 {
+      font-size: 18px;
+    }
+    > p {
+      font-size: 18px;
+    }
+  }
+  .inputs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  input {
+    width: 300px;
+  }
+  textarea {
+    width: 300px;
+  }
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: flex-end;
+  gap: 1rem;
+  margin: 3rem 8rem;
+  overflow: hidden;
+  position: relative;
+}
+.article {
+  width: 400px;
+  height: 250px;
+  transform: translateY(800px);
+  animation: slideUp 1.3s ease forwards 0.8s;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+}
+.projet {
+  width: 100%;
+  height: 100%;
+
+  background-image: url("/assets/netflix.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  transition: all 1s;
+}
+.projet:hover {
+  transform: scale(1.2);
+}
+@media (max-width: 800px) {
+  .port {
+    overflow-y: auto;
+  }
+  .father {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 2rem;
+  }
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: flex-end;
+    gap: 1rem;
+    justify-content: center;
+    overflow: hidden;
+    position: fixed;
+  }
+  .article {
+    width: 300px;
+    height: 200px;
+    margin-bottom: 1rem;
+  }
+}
