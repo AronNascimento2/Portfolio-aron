@@ -1,3 +1,9 @@
+body {
+  background-image: url("./assets/background.jpg");
+  animation: expand 0.8s ease forwards;
+  height: 100%;
+  width: 100%;
+}
 .projects {
   display: flex;
   flex-wrap: wrap;
