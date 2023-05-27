@@ -1,4 +1,4 @@
-/* .projects {
+.projects {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -7,7 +7,7 @@
   margin: 3rem 8rem;
   overflow: hidden;
   position: relative;
-} */
+}
 .article {
   width: 400px;
   height: 250px;
